@@ -27,6 +27,6 @@ namespace Financas.DAO
             return context.Usuarios.ToList();
         }
 
- 
+
     }
 }

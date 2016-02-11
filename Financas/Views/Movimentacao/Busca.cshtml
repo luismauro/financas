@@ -6,12 +6,12 @@
         <fieldset>
             <legend>Data da movimentação</legend>
             <div class="col-sm-6">
-                @Html.LabelFor(b => b.DataMinima, "Mínima")
-                @Html.TextBoxFor(b => b.DataMinima, new { @class = "form-control" })
+                @Html.LabelFor(b => b.DataMinima, "Mínimo")
+                @Html.TextBoxFor(b => b.DataMinima, new { @type = "date", @class = "form-control"})
             </div>
             <div class="col-sm-6">
                 @Html.LabelFor(b => b.DataMaxima, "Máxima")
-                @Html.TextBoxFor(b => b.DataMaxima, new { @class = "form-control" })
+                @Html.TextBoxFor(b => b.DataMaxima, new { @type = "date", @class = "form-control"})
             </div>
         </fieldset>
         <fieldset>
@@ -41,11 +41,11 @@
         </fieldset>
     </div>
 
-
+    <br>
     <input type="submit" value="Buscar" />
 }
 
-
+<br>
 <table class="table table-hover">
     <tr>
         <th>Id</th>
@@ -65,3 +65,4 @@
         </tr>
     }
 </table>
+   
